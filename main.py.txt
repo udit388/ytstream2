@@ -1,0 +1,29 @@
+import os
+import time
+import subprocess
+
+# YouTube stream key (Render me secret add karoge)
+STREAM_KEY = os.environ.get("STREAM_KEY")
+
+# Local video file (ya URL)
+VIDEO = "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"  # test video
+
+# RTMP link
+RTMP_URL = f"rtmp://a.rtmp.youtube.com/live2/{STREAM_KEY}"
+
+def start_stream():
+    cmd = [
+        "ffmpeg", "-re",
+        "-stream_loop", "-1",
+        "-i", VIDEO,
+        "-c", "copy",
+        "-f", "flv",
+        RTMP_URL
+    ]
+    print("🎬 Starting Stream...")
+    subprocess.run(cmd)
+
+while True:
+    start_stream()
+    print("🔁 Restarting...")
+    time.sleep(5)
