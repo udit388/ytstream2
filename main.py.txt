@@ -3,13 +3,13 @@ import time
 import subprocess
 
 # YouTube stream key (Render me secret add karoge)
-STREAM_KEY = os.environ.get("STREAM_KEY")
+STREAM_KEY = os.environ.get("z33m-9y0h-z7w0-4qhy-9vgd)
 
 # Local video file (ya URL)
-VIDEO = "https://samplelib.com/lib/preview/mp4/sample-5s.mp4"  # test video
+VIDEO = "https://rr2---sn-ab5l6nrk.googlevideo.com/videoplayback?expire=1762194610&ei=UqAIaf-_Fueoy_sPr6vN0AY&ip=82.26.212.99&id=o-AKvMn700O9N2Ttc7WjCEC9fw6qb5WrHe-cEi2bLJK4_v&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=0&rms=au%2Cau&bui=AdEuB5S0e8o78MpQgycokciMRSnx2gRaz8ZA72Scx5bQV3BY36nONX-By492kZcC8ehdV4oTf7P7-DLz&spc=6b0G_Jx_g-j4EkG3q9hQK-gKgKj1fTHAaNldIY1ToHBMfSY9XQl2sQOQE3jG__Cic64&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=8431.815&lmt=1750559542972112&fexp=51552689,51565116,51565681,51580968&c=ANDROID&txp=5438534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRgIhALJJVzEB_35mYwg8f5C80qU9JoOtsrkOZOhFqrZed0yjAiEA7YLDO1dwA963hSsm-q_FRmUc4gM1mpnkk7D3sQswCcw%3D&redirect_counter=1&rm=sn-q4felz7e&rrc=104&req_id=1006252a6154a3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&met=1762173016,&mh=IQ&mip=103.81.153.159&mm=31&mn=sn-ab5l6nrk&ms=au&mt=1762170489&mv=D&mvi=2&pl=0&lsparams=cps,ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhANFvD8RtPJTYwKudpQDap_Cf5pHD1aMNWUTl65D3rUANAiBhek8BE_foSrm91Psrm5BFkbzfFnfBKMlVD6WVKKtVkg%3D%3D"  # test video
 
 # RTMP link
-RTMP_URL = f"rtmp://a.rtmp.youtube.com/live2/{STREAM_KEY}"
+RTMP_URL = f"rtmp://a.rtmp.youtube.com/live2/z33m-9y0h-z7w0-4qhy-9vgd"
 
 def start_stream():
     cmd = [
